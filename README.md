@@ -4,14 +4,16 @@ FireSpark is a blazing-fast, modern, and highly customizable component-based lib
 
 With FireSpark, developers can create consistent, scalable, and responsive UIs with minimal effort. Its lightweight, modular structure allows you to import only the components you need, ensuring **optimal performance and file size**.
 
+## This is NOT production ready just yet, There are no available components. Wait for version 1.1 for more updates
+
 ## ✨ **Features**
 
-- 🔥 **Built on top of SparkCSS**: Customizable design tokens, utility classes, and snippets.  
-- ⚡ **Blazing-Fast**: Lightweight, modular components for optimal load times.  
-- 🎨 **Custom Theming**: Easily switch between light/dark themes and customize colors globally.  
-- 🛠️ **Reusable Components**: Buttons, modals, cards, navbars, and more.  
-- ♿ **Accessible by Default**: Components follow best practices for accessibility (ARIA support).  
-- 🚀 **Utility-First Design**: Use simple classes like `p-4`, `m-2`, and `flex-center` for layouts.  
+- 🔥 **Built on top of SparkCSS** | Customizable design tokens, utility classes, and snippets.  
+- ⚡ **Blazing-Fast** | Lightweight, modular components for optimal load times.  
+- 🎨 **Custom Theming** | Easily switch between light/dark themes and customize colors globally.  
+- 🛠️ **Reusable Components** | Buttons, modals, cards, navbars, and more.  
+- ♿ **Accessible by Default** | Components follow best practices for accessibility (ARIA support).  
+- 🚀 **Utility-First Design** | Use simple classes like `p-4`, `m-2`, and `flex-center` for layouts.  
 
 ### Installation🚀
 
