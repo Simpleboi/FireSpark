@@ -1,0 +1,78 @@
+# 🔥 Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ⚙️ Build/Distribution files
+dist/
+*.local
+
+# 🔧 Config files
+rollup.config.js
+rollup.config.mjs
+rollup.config.cjs
+
+# 🛠️ TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# 📄 Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 📦 Package locks
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
+
+# ⚙️ Editor & IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 📋 Logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔍 MacOS system files
+.DS_Store
+
+# ⚙️ Build Tools (optional, depending on usage)
+coverage/
+*.out
+
+# 🚫 Optional - Remove if not applicable
+# Ignore ES modules cache
+.esm-cache/
+
+# Ignore Vite cache files (if applicable)
+.vite/
+.vite-inspect/
+
+# Ignore npm cache
+.npm/
+
+# Ignore Webpack stats (if applicable)
+.stats.json
+
+# Rollup cache
+.rollup.cache/
+
+# Ignore all hidden files except .gitignore
+.*
+!.gitignore
+
+# 🔥 FireSpark specific (if needed)
+src/global.d.ts

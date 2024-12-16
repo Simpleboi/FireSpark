@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "lib": ["ES2023", "DOM"],
+      "module": "ESNext",
+      "declaration": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "moduleResolution": "bundler",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "isolatedModules": true,
+      "jsx": "react-jsx",
+      "noEmit": true, 
+      "allowJs": false,
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      }
+    },
+    "include": ["src/**/*", "global.d.ts"],
+    "exclude": ["node_modules", "dist", "**/*.scss", "**/*.css"]
+  }
+  
