@@ -1,14 +1,19 @@
-import { FC } from "react";
+import React, { FC } from 'react';
 
 export interface ButtonProps {
   label: string;
+  variant?: 'primary' | 'secondary';
   onClick?: () => void;
 }
 
-export const Button: FC<ButtonProps> = ({ label, onClick }) => {
+export const Button: FC<ButtonProps> = ({ label, variant = 'primary', onClick }) => {
   return (
-    <button onClick={onClick}>
+    <button 
+      className={`button button-${variant}`} 
+      onClick={onClick} 
+      type="button"
+    >
       {label}
     </button>
   );
-}
+};
