@@ -5,6 +5,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# Storybook build output
+storybook-static/
+
+# Storybook cache
+node_modules/.cache/storybook/
+
 # ⚙️ Build/Distribution files
 dist/
 *.local
@@ -76,3 +82,5 @@ coverage/
 
 # 🔥 FireSpark specific (if needed)
 src/global.d.ts
+
+*storybook.log
