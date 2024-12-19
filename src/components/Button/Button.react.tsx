@@ -1,18 +1,29 @@
-import React, { FC } from 'react';
+import React, { FC, ButtonHTMLAttributes } from "react";
 import "./Button.scss";
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
-  variant?: 'primary' | 'secondary';
+  variant?: "primary" | "secondary" | "danger" | "success";
+  size?: "sm" | "md" | "lg";
+  className?: string;
+  style?: React.CSSProperties;
   onClick?: () => void;
 }
 
-export const Button: FC<ButtonProps> = ({ label, variant = 'primary', onClick }) => {
+export const Button: FC<ButtonProps> = ({
+  label = "Placeholder",
+  variant = "primary",
+  onClick,
+  className = "",
+  size = "md",
+  style = {},
+}) => {
   return (
-    <button 
-      className={`button button-${variant}`} 
-      onClick={onClick} 
+    <button
+      className={`firesparkBtn ${size} ${className}`}
+      onClick={onClick}
       type="button"
+      style={style}
     >
       {label}
     </button>

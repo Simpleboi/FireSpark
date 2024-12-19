@@ -9,7 +9,10 @@ const meta: Meta<typeof Button> = {
   },
   argTypes: {
     label: { control: "text" },
-    variant: { control: { type: "select", options: ["primary", "secondary"] } },
+    variant: { 
+      control: { 
+        type: "select", 
+        options: ["primary", "secondary", "success", "danger"] } },
     onClick: { action: "clicked" },
   },
 };
@@ -36,5 +39,19 @@ export const CustomLabel: Story = {
   args: {
     label: "Custom Label!",
     variant: "primary",
+  },
+};
+
+export const Success: Story = {
+  args: {
+    label: "Success Button",
+    variant: "success",
+  },
+};
+
+export const Danger: Story = {
+  args: {
+    label: "Danger Button",
+    variant: "danger",
   },
 };

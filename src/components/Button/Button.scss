@@ -1,4 +1,42 @@
 
-.button {
-    border: 3px solid blue;
+$primary-color: #3498db;
+$secondary-color: #95a5a6;
+$success-color: #2ecc71;
+$danger-color: #e74c3c;
+
+
+// Base button styles
+.firesparkBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: black;
+
+    // Base hover state
+    &:hover {
+        filter: brightness(0.9);
+    }
+
+    // Modifier for variants
+    &-primary {
+        background-color: $primary-color;
+    }
+
+    &-secondary {
+        background-color: $secondary-color;
+    }
+
+    &-success {
+        background-color: $success-color;
+    }
+
+    &-danger {
+        background-color: $danger-color;
+    }
 }
