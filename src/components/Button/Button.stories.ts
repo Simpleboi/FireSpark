@@ -2,8 +2,11 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Button, ButtonProps } from "./Button.react";
 
 const meta: Meta<typeof Button> = {
-  title: "Components/Button",
-  component: Button,
+  title: "Components/Button",     // Where the component will apear in the StoryBook UI
+  component: Button, // Type of component we're showcasing
+  parameters: {
+    layout: 'centered',
+  },
   argTypes: {
     label: { control: "text" },
     variant: { control: { type: "select", options: ["primary", "secondary"] } },
@@ -17,14 +20,14 @@ type Story = StoryObj<ButtonProps>;
 
 export const Primary: Story = {
   args: {
-    label: "Click Me!",
+    label: "Primary btn",
     variant: "primary",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: "Secondary Button",
+    label: "Secondary btn",
     variant: "secondary",
   },
 };
