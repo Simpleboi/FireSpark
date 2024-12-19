@@ -1,42 +1,83 @@
-
+// Button styles
 $primary-color: #3498db;
 $secondary-color: #95a5a6;
 $success-color: #2ecc71;
 $danger-color: #e74c3c;
 
+$fontColor-light: #fff;
+$fontColor-dark: #000;
+
+@mixin button-variant(
+  $background-color,
+  $text-color: $font-color-light,
+  $hover-color: darken($background-color, 10%)
+) {
+  background-color: $background-color;
+  color: $text-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// Button Base Styles
+@mixin button-base(
+  $padding: 0.625rem 1.25rem,
+  $font-size: 1rem,
+  $border-radius: 0.3125rem
+) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var($padding, 10px 20px);
+  font-weight: 500;
+  border-radius: var($border-radius, 5px);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  color: var($fontColor-light, #fff);
+  background-color: var($bg-color, #000);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
 
 // Base button styles
 .firesparkBtn {
-    display: inline-block;
-    padding: 10px 20px;
+    @include button-base();
+
+  // Base hover state
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  // Modifier for variants
+  &-primary {
+    background-color: $primary-color;
+  }
+
+  &-secondary {
+    background-color: $secondary-color;
+  }
+
+  &-success {
+    background-color: $success-color;
+  }
+
+  &-danger {
+    background-color: $danger-color;
+  }
+
+  // size
+  &-sm {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  &-md {
     font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    color: black;
+    padding: 10px 20px;
+  }
 
-    // Base hover state
-    &:hover {
-        filter: brightness(0.9);
-    }
-
-    // Modifier for variants
-    &-primary {
-        background-color: $primary-color;
-    }
-
-    &-secondary {
-        background-color: $secondary-color;
-    }
-
-    &-success {
-        background-color: $success-color;
-    }
-
-    &-danger {
-        background-color: $danger-color;
-    }
+  &-lg {
+    font-size: 20px;
+    padding: 12px 28px;
+  }
 }

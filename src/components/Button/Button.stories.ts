@@ -24,7 +24,7 @@ type Story = StoryObj<ButtonProps>;
 export const Primary: Story = {
   args: {
     label: "Primary btn",
-    variant: "primary",
+    variant: "secondary",
   },
 };
 

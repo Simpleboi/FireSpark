@@ -20,7 +20,11 @@ export const Button: FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`firesparkBtn ${size} ${className}`}
+      className={`
+        firesparkBtn 
+        firesparkBtn-${size} 
+        firesparkBtn-${variant}
+        ${className}`}
       onClick={onClick}
       type="button"
       style={style}
