@@ -2,8 +2,8 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Button, ButtonProps } from "./Button.react";
 
 const meta: Meta<typeof Button> = {
-  title: "Components/Button",     // Where the component will apear in the StoryBook UI
-  component: Button, // Type of component we're showcasing
+  title: "Components/Button",    
+  component: Button,
   parameters: {
     layout: 'centered',
   },
