@@ -1,0 +1,38 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #e9e9e9;
+      }
+    }
+  
+    &__content {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+      background-color: #fff;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+  
+    &__content--expanded {
+      max-height: 500px; /* Adjust as needed or use 'auto' with animations */
+    }
+  }
+  
