@@ -1,6 +1,6 @@
 {
   "name": "firesparklib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.cjs.js",
   "description": "A blazing-fast, modern, and highly customizable component-based library for web development",
   "types": "dist/index.d.ts",
