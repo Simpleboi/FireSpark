@@ -25,7 +25,7 @@ export const Default: Story = {
     label: "Default Input",
     placeholder: "Enter text...",
     variant: "outlined",
-    size: "md",
+    size: "sm",
   },
 };
 

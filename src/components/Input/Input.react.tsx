@@ -4,9 +4,9 @@ import "./Input.scss";
 export interface InputProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, "size"> {
   label?: string;
-  error?: string; // Error message
-  variant?: "outlined" | "filled"; // Variants
-  size?: "sm" | "md" | "lg"; // Sizes
+  error?: string; 
+  variant?: "outlined" | "filled"; 
+  size?: "sm" | "md" | "lg"; 
 }
 
 export const Input: FC<InputProps> = ({
@@ -21,8 +21,8 @@ export const Input: FC<InputProps> = ({
     <div className={`input-field ${className}`}>
       {label && <label className="input-field_label">{label}</label>}
       <input
-        className={`input-field__input input-field__input--${variant} input-field__input--${size} ${
-          error ? "input-field__input--error" : ""
+        className={`input-field__input input-field_input--${variant} input-field_input--${size} ${
+          error ? "input-field_input--error" : ""
         }`}
         {...props}
       />
@@ -30,3 +30,15 @@ export const Input: FC<InputProps> = ({
     </div>
   );
 };
+
+
+// Example usage
+<Input
+    label="Email"
+    type="email"
+    placeholder="Enter your email"
+    variant="outlined"
+    size="lg"
+    error="This field is required"
+    onChange={(e) => console.log(e.target.value)}
+/>
