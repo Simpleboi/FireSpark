@@ -1,11 +1,11 @@
 import React from "react";
 import "./ProgressBar.scss";
-
+// this is for my daily commit #4
 export interface ProgressBarProps {
-  progress: number; // Progress percentage (0–100)
+  progress: number; 
   variant?: "primary" | "success" | "danger" | "info"; 
   size?: "sm" | "md" | "lg"; 
-  showLabel?: boolean; // Whether to show the percentage or custom label
+  showLabel?: boolean; 
   label?: string; 
 }
 
