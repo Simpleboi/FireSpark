@@ -1,34 +1,43 @@
-import React from "react";
+import { FC ,ProgressHTMLAttributes } from "react";
 import "./ProgressBar.scss";
-// this is for my daily commit #4
-export interface ProgressBarProps {
-  progress: number; 
-  variant?: "primary" | "success" | "danger" | "info"; 
-  size?: "sm" | "md" | "lg"; 
-  showLabel?: boolean; 
-  label?: string; 
+
+export interface ProgressBarProps
+  extends ProgressHTMLAttributes<HTMLProgressElement> {
+  progress: number;
+  variant?: "primary" | "success" | "danger" | "info";
+  size?: "sm" | "md" | "lg";
+  showLabel?: boolean;
+  label?: string;
+  style?: React.CSSProperties;
 }
 
-export const ProgressBar: React.FC<ProgressBarProps> = ({
+export const ProgressBar: FC<ProgressBarProps> = ({
   progress,
   variant = "primary",
   size = "md",
   showLabel = true,
   label,
+  style,
+  ...props
 }) => {
-  const progressValue = Math.min(Math.max(progress, 0), 100); // Ensure progress is between 0–100
+  const progressValue = Math.min(Math.max(progress, 0), 100);
 
   return (
-    <div className={`progress-bar progress-bar--${variant} progress-bar--${size}`}>
-      <div
-        className="progress-bar__fill"
-        style={{ width: `${progressValue}%` }}
-      ></div>
+    <div
+      className={`progress-bar progress-bar--${variant} progress-bar--${size}`}
+      style={style}
+    >
       {showLabel && (
-        <div className="progress-bar__label">
+        <span className="progress-bar__label">
           {label ? label : `${progressValue}%`}
-        </div>
+        </span>
       )}
+      <progress
+        value={progressValue}
+        max={100}
+        className="progress-bar__element"
+        {...props}
+      ></progress>
     </div>
   );
 };

@@ -4,9 +4,9 @@ import { Button, ButtonProps } from "./Button.react";
 const meta: Meta<typeof Button> = {
   title: "Components/Button",    
   component: Button,
-  parameters: {
-    layout: 'centered',
-  },
+  // parameters: {
+  //   layout: 'centered',
+  // },
   argTypes: {
     label: { control: "text" },
     variant: { 

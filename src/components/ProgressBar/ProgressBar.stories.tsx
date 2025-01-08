@@ -5,6 +5,9 @@ import { ProgressBar, ProgressBarProps } from "./ProgressBar.react";
 const meta: Meta<typeof ProgressBar> = {
   title: "Components/ProgressBar",
   component: ProgressBar,
+  parameters: {
+    layout: 'centered',
+  },
   argTypes: {
     progress: { control: { type: "number", min: 0, max: 100 } },
     variant: {
