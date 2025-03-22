@@ -16,11 +16,12 @@
     "noEmit": true,
     "allowJs": false,
     "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "paths": {
       "@/*": ["src/*"],
       "@components/": ["src/components/"]
     }
   },
-  "include": ["src/**/*", "global.d.ts"],
+  "include": ["src/**/*", "global.d.ts", "src"],
   "exclude": ["node_modules", "dist", "**/*.+(scss|css)"]
 }
