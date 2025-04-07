@@ -38,6 +38,7 @@ Here’s a quick example of how to use FireSpark’s Button component in a React
 
 ```TypeScript
 import { Button } from 'firespark';
+import "firesparklib/bundle.css";
 
 function App() {
   return (
@@ -58,8 +59,12 @@ export default App;
 ### How it works
 
 1. Import the components you need from FireSpark `import { Button } from 'firespark'`.
-2. Add the FireSpark components like `<Button />` `<Modal />`, and `<Card />` to name a few.
-3. Customize the components to your liking by passing in props like `variant` `size`, or `disabled` for example.
+
+2. Add the firespark styles with `import "firesparklib/bundle.css"`
+
+3. Add the FireSpark components like `<Button />` `<Modal />`, and `<Card />` to name a few.
+
+4. Customize the components to your liking by passing in props like `variant` `size`, or `disabled` for example.
 
 ---
 
