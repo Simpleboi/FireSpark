@@ -4,6 +4,7 @@
     "lib": ["ES2023", "DOM"],
     "module": "ESNext",
     "declaration": true,
+    "declarationDir": "dist",
     "outDir": "./dist",
     "rootDir": "./src",
     "moduleResolution": "bundler",
