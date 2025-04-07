@@ -1,6 +1,6 @@
 {
   "name": "firesparklib",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -81,7 +81,8 @@
         "types": "./dist/index.d.ts",
         "default": "./dist/index.cjs.js"
       }
-    }
+    },
+    "./bundle.css": "./dist/bundle.css"
   },
   "eslintConfig": {
     "extends": [
