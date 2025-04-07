@@ -30,7 +30,8 @@
     "url": "https://github.com/n/a/issues"
   },
   "files": [
-    "dist"
+    "dist",
+    "./dist/bundle.css"
   ],
   "homepage": "https://github.com/n/a#readme",
   "devDependencies": {

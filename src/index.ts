@@ -1,5 +1,5 @@
 // To export all the components
-import "firespark/dist/bundle.css";
+// import "firespark/dist/bundle.css";
 
 export { Button } from "./components/Button/Button.react";
 
